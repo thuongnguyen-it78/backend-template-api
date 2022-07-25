@@ -1,0 +1,3 @@
+export const CLOUDINARY_NAME = 'dxjfrmpne'
+export const CLOUDINARY_PUBLIC_KEY = '914946239749177'
+export const CLOUDINARY_SECRET_KEY = 'O2B5zUQofPHqMgqSgZVktMrE2O0'
