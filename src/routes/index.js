@@ -9,7 +9,7 @@ import postRoute from '@/features/post/post.route'
 import commentRoute from '@/features/comment/comment.route'
 import songRoute from '@/features/song/song.route'
 import playlistRoute from '@/features/playlist/playlist.route'
-import configRoute from '@/features/config/playlist.route'
+import configRoute from '@/features/config/config.route'
 
 function route(app) {
   router.use('/auth', authRoute)
