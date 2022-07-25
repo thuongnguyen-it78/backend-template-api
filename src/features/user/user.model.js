@@ -40,17 +40,20 @@ const userSchema = new mongoose.Schema(
         },
         message: (props) => `${props.value} is not a valid email`,
       },
-      required: true,
+      default: null,
       unique: true,
     },
     phoneNumber: {
       type: String,
+      default: null,
     },
     googleId: {
       type: String,
+      default: null,
     },
     facebookId: {
       type: String,
+      default: null,
     },
     password: {
       type: String,
@@ -69,8 +72,8 @@ const userSchema = new mongoose.Schema(
     },
     gender: {
       type: Number,
-      default: userMale,
       enum: [userMale, userFemale],
+      default: userMale,
     },
     address: {
       type: String,
@@ -87,13 +90,13 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: Number,
-      default: userRole,
       enum: [userRole, adminRole],
+      default: userRole,
     },
     status: {
       type: Number,
-      default: userInactive,
       enum: [userInactive, userActive],
+      default: userInactive,
     },
     delete: {
       type: Date,

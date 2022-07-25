@@ -9,7 +9,7 @@ import postRoute from '@/features/post/post.route'
 import commentRoute from '@/features/comment/comment.route'
 import songRoute from '@/features/song/song.route'
 import playlistRoute from '@/features/playlist/playlist.route'
-
+import configRoute from '@/features/config/playlist.route'
 
 function route(app) {
   router.use('/auth', authRoute)
@@ -19,7 +19,8 @@ function route(app) {
   router.use('/posts', postRoute)
   router.use('/comments', commentRoute)
   router.use('/songs', songRoute)
-  router.use('/playlist', playlistRoute)
+  router.use('/playlists', playlistRoute)
+  router.use('/configs', configRoute)
 
   app.use('/v1', router)
 }

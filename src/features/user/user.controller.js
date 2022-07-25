@@ -50,6 +50,24 @@ class UserController {
       next(error)
     }
   }
+
+  async importFakeDate(req, res, next) {
+    try {
+      const data = await UserService.importFakeDate(id)
+      res.status(OK).json(getSingleResponse(data))
+    } catch (error) {
+      next(error)
+    }
+  }
+
+  async destroyData(req, res, next) {
+    try {
+      const data = await UserService.destroyData(id)
+      res.status(OK).json(getSingleResponse(data))
+    } catch (error) {
+      next(error)
+    }
+  }
 }
 
 export default new UserController()
